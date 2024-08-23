@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal for Kesu</title>
+    <link rel="stylesheet" href="kesuprathap.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Kesu!</h1>
+        <p>You are the sunshine in my life, the one who makes my heart skip a beat. 
+        <br>Will you make me the happiest person in the world and be mine forever?</p>
+        <button onclick="revealAnswer('yes')">Yes</button>
+        <button onclick="revealAnswer('no')">No</button>
+        <div id="response"></div>
+    </div>
+    <script>
+        function revealAnswer(answer) {
+            const responseDiv = document.getElementById('response');
+            if (answer === 'yes') {
+                responseDiv.innerHTML = "<p style='color: green;'>You just made me the happiest person in the world!</p>";
+            } else {
+                responseDiv.innerHTML = "<p style='color: red;'>Even though you said no, I will always cherish you.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
